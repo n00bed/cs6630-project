@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization - Homework 5</title>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="bower_components/d3-tip/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Automated Behavior Metrics</h1>
+<p class="info"></p>
+<div class="content">
+    <div id="session-view" >
+        <h3>Session View</h3>
+    </div>
+
+
+    <div id="image-detail">
+        <h2 id="selected-image">Image Detail</h2>
+        <!--<div><h4>Name</h4> <span id="selected-image-name"></span></div>-->
+        <!--<div><h4>Time</h4></div>-->
+        <div>
+
+            <h4 title="Probabilty that the model thinks the image has a hand raise">Prob(Hand Raise)</h4>
+            <span id="selected-image-prob"></span>
+        </div>
+
+        <div>
+            <h4 title="The actual image classification">Actual</h4>
+            <span id="selected-image-actual"></span>
+        </div>
+
+        <!--http://jsfiddle.net/tGnun/-->
+        <!--<h4>Comment</h4>-->
+        <span id="selected-image-comment"><input type="text" placeholder="Enter Comment"> </input></span>
+    </div>
+
+
+    <div id="image-overlay">
+        <img id="image-jpg" alt="Unable to find image. Please verify the loaded csv image names match images available">
+        <svg id="image-brushes">
+            <rect></rect>
+        </svg>
+    </div>
+</div>
+<div class="sideBar">
+    <table id="selected-images">
+        <thead>
+        <tr>
+            <td width>Images</td>
+            <td width>File Name</td>
+            <td style="text-align:center" onclick='sortBy("")'>Probability <br/></td>
+            <td onclick='sortBy("")'>Actual</td>
+            <td onclick='sortBy("")'>Comment</td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+
+
+
+<script type="application/javascript" src="public/js/sessionViewChart.js"></script>
+<script type="application/javascript" src="public/js/imageDetail.js"></script>
+<script type="application/javascript" src="public/js/imageChart.js"></script>
+<script type="application/javascript" src="public/js/selectedImagesTable.js"></script>
+<script type="application/javascript" src="public/js/main.js"></script>
+</body>
+</html>

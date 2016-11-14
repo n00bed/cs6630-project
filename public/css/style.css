@@ -1,0 +1,259 @@
+
+
+body {
+    font-family: Lato;
+}
+
+h1 {
+    font-family: "Arvo";
+    font-size:35px;
+    color: #464646;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+}
+.info{
+    margin-left: 20px;
+}
+.tile {
+    stroke: #FFF;
+    stroke-width: 4;
+}
+
+.yeartext, .tilestext, .brushtext{
+    text-anchor:middle;
+    font-size: 24px;
+    fill: #565656;
+    stroke-width: 0.1px;
+    /*stroke: #e5e5e5;*/
+}
+.yearLine {
+    stroke-width:4;
+    stroke: #eee;
+    stroke-dasharray: 6,6;
+}
+
+.electoralVotesNote, .votesPercentageNote{
+    text-anchor:middle;
+    font-size: 24px;
+}
+
+.electoralVoteLine{
+    stroke:black;
+    stroke-width:4;
+}
+
+
+.votesPercentageText{
+    font-size: 35px;
+}
+.end{
+    text-anchor:end;
+}
+
+.nomineeInfoText{
+    font-size: 36px;
+}
+.Axis{
+    stroke: #eee;
+    stroke-width: 4;
+}
+.content {
+    display: inline-block;
+    width: 60%;
+}
+
+.sideBar {
+    display: inline-block;
+    width: 40%;
+    float:right;
+}
+
+/*.electoralVotes{*/
+    /*stroke: #eee;*/
+/*}*/
+
+/*.middlePoint{*/
+    /*stroke: #eee;*/
+/*}*/
+
+/*.fullView{*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+/*}*/
+
+/*.yearChart{*/
+    /*stroke: #FFF;*/
+/*}*/
+/*.selectedYearChart{*/
+    /*stroke: black;*/
+    /*r:15;*/
+/*}*/
+
+.highlighted{
+    stroke: #404040;;
+    stroke-width:4;
+}
+
+.brush .selection {
+    fill-opacity: .5;
+}
+
+/*.selected{*/
+    /*stroke: #404040;;*/
+    /*stroke-width:4;*/
+    /*r:25px;*/
+/*}*/
+
+
+h2{
+    -webkit-margin-before: 5px;
+    -webkit-margin-after:  5px;
+}
+.d3-tip {
+    /*line-height: 5;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 400px;
+    border-style: groove;
+    /*padding: 12px;*/
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    pointer-events: none;
+}
+.tooltip-title{
+    font-size:18px;
+    font-family: "Arial Black";
+
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    /*box-sizing: border-box;*/
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    /*line-height: 1;*/
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+    content: "\25BC";
+    /*margin: -1px 0 0 0;*/
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+    content: "\26A0";
+    /*margin: -4px 0 0 0;*/
+    top: -800px;
+    left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+    content: "\25B2";
+    /*margin: 4px 0 1px 0;*/
+    top: -8px;
+    left: 1481px;
+    text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+    content: "\25B6";
+    /*margin: -4px 0 0 -1px;*/
+    top: 50%;
+    left: 100%;
+}
+
+h3{
+    text-anchor:middle;
+    font-size: 32px;
+}
+
+#session-view svg{
+    border:1px solid lightgray;
+}
+
+.isEventCircle{
+    fill: #be2714;
+    stroke-width: 3px;
+    r:5;
+}
+.notEventCircle{
+    fill: #364e74;
+    stroke-width: 3px;
+    r:5;
+}
+.unknownEventCircle{
+    fill: gray;
+    stroke-width: 3px;
+    r:5;
+}
+.brushedPoint{
+    r:7;
+}
+.selectedPoint{
+    stroke:black;
+    r:8;
+}
+#image-overlay svg, img{
+        position:absolute;
+}
+#image-overlay svg{
+    fill:yellow;
+    opacity:0.5;
+}
+#image-detail > div > h4 {
+    display:inline !important;
+}
+#image-detail > h2 {
+    display:inline !important;
+}
+
+table {
+    border-collapse: collapse;
+    font: 14px sans-serif;
+    /*width: 720px;*/
+}
+
+th {
+    font-weight: normal;
+    text-align: right;
+    padding-right: 6px;
+    min-width: 125px;
+}
+
+thead td , th{
+    cursor: s-resize;
+}
+
+tbody tr:first-child td {
+    padding-top: 2px;
+}
+
+tbody th{
+    cursor:pointer;
+    font-weight: bold;
+}
+
+tbody td {
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-left: solid 1px #000;
+    color:black
+}
+
+thead td , th{
+    cursor: s-resize;
+}
+
